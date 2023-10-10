@@ -4,14 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ProductController extends Controller
+class userController extends Controller
 {
+    //
     public function listProducts(){
 
-        return view("products.products");
-
+        return view("Products/products");
     }
+
     public function detalle(){
-        return view("products.detail");
+        return view('Products/detail');
     }
 }
