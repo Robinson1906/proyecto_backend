@@ -24,12 +24,3 @@ Route::get('productos/detalle', [userController::class,'detalle'] );
 
 
 
-
-Route::get('productos/{id}', function ($id) {
-    return "el nombre del producto es: $id";
-});
-
-Route::get('productos/{id}/{categoria}', function ($id,$categoria) {
-    return "el nombre del producto es: $id con la categoria $categoria";
-});
-

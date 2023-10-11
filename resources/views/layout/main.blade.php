@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Como mierda</title>
 </head>
 
 <body>
+
+    {{-- encabezado  --}}
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <nav class="navbar bg-body-tertiary">
                 <div class="container">
                     <a class="navbar-brand" href="#">
-                        <img src="img/logo_naranja.png" alt="Bootstrap" width="150">
+                        <img src="../img/logo_naranja.png" alt="Bootstrap" width="150">
                     </a>
                 </div>
             </nav>
@@ -55,54 +57,11 @@
         </div>
     </nav>
 
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="img/slider-jornadas-constitucional.jpg" class="d-block w-100" alt="...1">
-        </div>
-        <div class="carousel-item">
-            <img src="img/slider-semana-tecnologo-2023.jpg" class="d-block w-100" alt="...2">
-        </div>
-        <div class="carousel-item">
-            <img src="img/slider-semana-ingenieria.jpg" class="d-block w-100" alt="...3">
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-    </div>
-    <h1 class="text-center m-5"> Productos </h1>
+    {{-- contenido --}}
 
-    <div class="container text-center">
-        <div class="row">
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/producto1.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Computador</h5>
-                        <p class="card-text">$100.000</p>
-                        <a href="#" class="btn btn-primary my-background">Añadir al Carrito</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                Column
-            </div>
-            <div class="col">
-                Column
-            </div>
-        </div>
-    </div>
+    @yield('content')
 
+    {{-- footer --}}
     <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
         <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
             <div class="row">
@@ -165,6 +124,7 @@
             </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
